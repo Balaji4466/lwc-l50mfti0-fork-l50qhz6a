@@ -1,0 +1,15 @@
+<template>
+	<div id="waiting" if:false={ready}>Loading…</div>
+	<div id="display" if:true={ready}>
+		<div>Name: {name}</div>
+		<div>Description: {description}</div>
+		<div>
+			<lightning-badge label={material}></lightning-badge>
+		</div>
+		<div>
+			<lightning-badge label={category}></lightning-badge>
+		</div>
+		<div>Price: {price}</div>
+		<div><img src={pictureUrl}/></div>
+	</div>
+</template>
